@@ -23,23 +23,25 @@ function checkPassword() {
   } else {
     tryMsg.style.display = "block";
 
-    // Change clues to new set [emotion] [how many months] [day today]
-    const emotion = "happy";
-    const startDate = new Date(2023, 9, 13); // October 13, 2023 (0-based month)
+    // New clue set after failed attempt
+    const startDate = new Date(2023, 9, 13); // Oct 13, 2023
     const today = new Date();
 
     const months = monthsSince(startDate, today);
     const day = today.getDate();
 
     clueList.innerHTML = `
-      <li>[${emotion}]</li>
-      <li>[${months}]</li>
-      <li>[${day}]</li>
+      <li>No spaces</li>
+      <li>The first word is <strong>happy</strong></li>
+      <li>The second part is how many months we are: <strong>${months}</strong></li>
+      <li>The third part is the day today: <strong>${day}</strong></li>
+      <li><strong>13 characters total</strong></li>
     `;
 
     document.getElementById("password").value = "";
   }
 }
+
 </script>
 </head>
 <body class="password-page">
