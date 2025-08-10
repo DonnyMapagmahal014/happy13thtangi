@@ -39,7 +39,7 @@ body {
 
 /* Welcome Page */
 .welcome-page {
-    background: url('https://github.com/DonnyMapagmahal014/happy13thtangi/blob/main/Happy%2013th,%20Tangi.jpg?raw=true') center/cover no-repeat;
+    background: url('Happy 13th, Tangi.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ body {
 
 /* Main Page */
 .main-page {
-    background: url('https://github.com/DonnyMapagmahal014/happy13thtangi/blob/main/Happy%2013th,%20Tangi.jpg?raw=true') center/cover no-repeat;
+    background: url('Happy 13th, Tangi.jpg') center/cover no-repeat;
     min-height: 100vh;
     padding: 20px;
 }
