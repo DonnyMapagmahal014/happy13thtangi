@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Puzzle</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function checkPassword() {
+    const pass = document.getElementById("password").value;
+    if (pass === "happy22th13th") {
+        window.location.href = "welcome.html";
+    } else {
+        alert("Wrong password! Try again.");
+    }
+}
+</script>
+</head>
+<body class="password-page">
+<div class="puzzle-box">
+    <h1>💌 Enter the Secret Password</h1>
+    <p><strong>Clues:</strong></p>
+    <ul>
+        <li>It’s what you feel when you see me ❤️</li>
+        <li>Two special numbers: the day we met and our monthiversary</li>
+        <li>Combine them into one continuous phrase</li>
+    </ul>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Unlock</button>
+</div>
+</body>
+</html>
